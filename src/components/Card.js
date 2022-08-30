@@ -1,9 +1,9 @@
 import React from 'react'
 
 export default function Card(props) {
-    const divStyle = {
-        width: '25rem'
-    }
+    // const divStyle = {
+    //     width: '25rem'
+    // }
 
     return (
         // <div className='row justify-content-center'>
@@ -14,8 +14,7 @@ export default function Card(props) {
                     <li className="list-group-item">
                         <input className="form-check-input me-4" type="checkbox" 
                             value="" id="checkbox" />
-                        <label className="form-check-label" htmlFor="checkbox" onClick={() => 
-                            props.handleTodoClick(props.toDoItem)}>{props.toDoItem}
+                        <label className="form-check-label" htmlFor="checkbox">{props.toDoItem}
                         </label>
                     </li> 
 

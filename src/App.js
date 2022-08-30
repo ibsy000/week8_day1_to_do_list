@@ -43,7 +43,7 @@ function App(props){
                     <div className="card" style={divStyle}>
 
                     <ul className="list-group list-group-flush">
-                        {items.map((itm, idx) => <Card toDoItem={itm} key={idx} handleTodoClick={handleTodoClick}/>)}
+                        {items.map((itm, idx) => <Card toDoItem={itm} key={idx}/>)}
                     </ul>
 
                     </div>
