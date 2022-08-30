@@ -8,6 +8,14 @@ function App(props){
         width: '25rem'
     }
 
+    const submitStyle ={
+        backgroundColor: '#ef476f'
+    }
+
+    const fontStyle = {
+        fontFamily: 'Splash, cursive'
+    }
+
     const [items, setItems] = useState([])
 
     function handleTodoClick(event){
@@ -21,13 +29,13 @@ function App(props){
     return (
         <>
             <Navbar />
-            <h1 className="text-center mt-3">Don't Forget...</h1>
+            <h1 className="text-center my-3 text-light display-1" style={fontStyle}>Don't Forget...</h1>
             <div className='container'>
 
                 <div className='row'>
                 <form onSubmit = {handleTodoClick}>
                     <input type='text' className='form-control' name='listItem' placeholder='What did I need to do..?' />
-                    <input type='submit' className='btn btn-warning w-100 my-3' value='Add Item' />
+                    <input type='submit' className='btn w-100 my-3 bg-gradient' style={submitStyle} value='Add Item' />
                 </form>
                 </div>
 

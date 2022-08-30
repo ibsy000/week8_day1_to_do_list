@@ -2,8 +2,11 @@ import React from 'react'
 import { ReactComponent as Logo } from '../images/list-task.svg'
 
 export default function Navbar() {
+    const bgColor = {
+        backgroundColor: '#ffd166'
+    }
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+        <nav className="navbar navbar-expand-lg navbar-light bg-gradient" style={bgColor}>
             <div className="container-fluid">
                 <Logo width="30" height="24" className="d-inline-block align-text-top me-2"/>
                 <a className="navbar-brand" href="/">My To-Do List</a>
