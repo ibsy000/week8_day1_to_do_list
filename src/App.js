@@ -27,13 +27,13 @@ function App(props){
     }
 
     return (
-        <>
+        <> {/* react fragment*/}
             <Navbar />
             <h1 className="text-center my-3 text-light display-1" style={fontStyle}>Don't Forget...</h1>
             <div className='container'>
 
                 <div className='row'>
-                <form onSubmit = {handleTodoClick}>
+                <form className='form-group' onSubmit = {handleTodoClick}>
                     <input type='text' className='form-control' name='listItem' placeholder='What did I need to do..?' />
                     <input type='submit' className='btn w-100 my-3 bg-gradient' style={submitStyle} value='Add Item' />
                 </form>
